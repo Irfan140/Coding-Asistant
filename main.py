@@ -46,7 +46,8 @@ with st.sidebar:
             "llama-3.1-70b-versatile",
             "llama-3.1-8b-instant",
             "mixtral-8x7b-32768",
-            "gemma2-9b-it"
+            "llama3-groq-70b-8192-tool-use-preview"
+
         ],
         help="Choose the AI model for your assistant"
     )
