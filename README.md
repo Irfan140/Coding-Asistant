@@ -1,4 +1,4 @@
-# 💻 AI Coding Assistant
+# 💻 AI Coding Agent
 
 An intelligent coding assistant powered by Groq's fast LLM inference and built with Streamlit. Get instant help with coding questions, debugging, code reviews, and algorithm optimization.
 

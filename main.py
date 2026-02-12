@@ -4,7 +4,7 @@ import os
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Coding Assistant",
+    page_title="AI Coding Agent",
     page_icon="💻",
     layout="wide"
 )
@@ -77,25 +77,8 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
     
-    st.divider()
     
-    st.markdown("""
-    ### About
-    This is an AI-powered coding assistant built with:
-    - **Streamlit** for the UI
-    - **Groq** for fast LLM inference
     
-    ### How to use:
-    1. Enter your Groq API key above
-    2. Select your preferred model
-    3. Start asking coding questions!
-    
-    ### Tips:
-    - Ask for code examples
-    - Request debugging help
-    - Get explanations of concepts
-    - Ask for code reviews
-    """)
 
 # Main chat interface
 st.title("💻 AI Coding Assistant")
@@ -106,13 +89,6 @@ client = initialize_groq()
 
 if not client:
     st.warning("⚠️ Please enter your Groq API key in the sidebar to start chatting.")
-    st.info("""
-    **Don't have a Groq API key?**
-    1. Go to [console.groq.com](https://console.groq.com)
-    2. Sign up for a free account
-    3. Generate an API key
-    4. Paste it in the sidebar
-    """)
 else:
     # Display chat messages
     for message in st.session_state.messages:
