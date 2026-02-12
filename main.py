@@ -81,7 +81,7 @@ with st.sidebar:
     
 
 # Main chat interface
-st.title("💻 AI Coding Assistant")
+st.title("💻 AI Coding Agent")
 st.markdown("Ask me anything about coding, debugging, or software development!")
 
 # Check if API key is set
@@ -153,4 +153,3 @@ else:
         
         # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": full_response})
-
