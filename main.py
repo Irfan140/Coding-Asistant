@@ -4,7 +4,7 @@ import os
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Coding Agent",
+    page_title="Coding Agent",
     page_icon="💻",
     layout="wide"
 )
@@ -81,7 +81,7 @@ with st.sidebar:
     
 
 # Main chat interface
-st.title("💻 AI Coding Agent")
+st.title("💻 Coding Agent")
 st.markdown("Ask me anything about coding, debugging, or software development!")
 
 # Check if API key is set
